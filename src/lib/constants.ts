@@ -1,6 +1,6 @@
 import type { ItemEntry } from "./types";
 
-export interface GymInfo {
+interface GymInfo {
   badge: string;
   gym: string;
   leader: string;
@@ -91,17 +91,17 @@ export const INVENTORY_ITEMS: ItemEntry[] = [
 ];
 
 /** Avatar tiers: common = free, special + rarest = pro-only (when pro is implemented). Matches PokeAPI categories. */
-export type AvatarTier = "common" | "special" | "rarest";
+type AvatarTier = "common" | "special" | "rarest";
 
 /** Common avatars — free for all. PokeAPI standard-balls (category 34): poke, great, ultra. */
-export const POKEBALLS_COMMON: string[] = [
+const POKEBALLS_COMMON: string[] = [
   "poke-ball",
   "great-ball",
   "ultra-ball",
 ];
 
 /** Special avatars — pro only. PokeAPI special-balls (category 33). */
-export const POKEBALLS_SPECIAL: string[] = [
+const POKEBALLS_SPECIAL: string[] = [
   "net-ball",
   "dive-ball",
   "nest-ball",
@@ -118,7 +118,7 @@ export const POKEBALLS_SPECIAL: string[] = [
 ];
 
 /** Rarest avatars — pro only. PokeAPI standard-balls (category 34): safari, park, sport, master. */
-export const POKEBALLS_RAREST: string[] = [
+const POKEBALLS_RAREST: string[] = [
   "safari-ball",
   "park-ball",
   "sport-ball",

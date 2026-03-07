@@ -8,7 +8,7 @@ function normalizeStatus(v: PokemonStatus | boolean | undefined): PokemonStatus 
   return "none";
 }
 
-export function migrateState(saved: AppState): AppState {
+function migrateState(saved: AppState): AppState {
   const migrated = { ...saved, avatarSlug: saved.avatarSlug ?? "master-ball" };
   const gameData = { ...migrated.gameData };
   for (const g of ["fr", "lg"] as GameKey[]) {

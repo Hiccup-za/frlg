@@ -84,7 +84,7 @@ export async function fetchKantoPokemon(): Promise<PokemonEntry[]> {
  * Two-step fetch: GET /pokemon-species/{id} → evolution_chain.url → GET /evolution-chain/{id}
  * Returns the full evolution chain with level/item/trade requirements.
  */
-export async function fetchEvolutionChain(pokemonId: number): Promise<PokeAPIEvolutionChain> {
+async function fetchEvolutionChain(pokemonId: number): Promise<PokeAPIEvolutionChain> {
   const sRes = await fetch(`${POKEAPI_BASE}/pokemon-species/${pokemonId}`);
   if (!sRes.ok) throw new Error(`Species ${sRes.status}`);
   const species: PokeAPISpeciesResponse = await sRes.json();
