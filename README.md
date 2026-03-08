@@ -57,16 +57,16 @@ This app was prototyped in Claude's artifact sandbox, which **blocks all externa
 
 ## Running Locally
 
-No dependencies, no build step.
+This is a Turborepo monorepo. Use Bun:
 
 ```bash
-# Just open the file in a browser
-open pokemon-tracker.html
-
-# Or serve it with any static server
-npx serve .
-python3 -m http.server 8080
+bun install
+bun run dev      # Start Next.js dev server
+bun run build    # Build for production
+bun run start    # Start production server
 ```
+
+The app lives in `apps/web/`.
 
 ---
 

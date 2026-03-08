@@ -9,6 +9,7 @@ next-env.d.ts
 out
 dist
 *.tgz
+.vercel
 
 # code coverage
 coverage
@@ -16,7 +17,7 @@ coverage
 
 # logs
 logs
-_.log
+*.log
 report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 
 # dotenv environment variable files
@@ -27,6 +28,7 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 .env.local
 
 # caches
+.turbo
 .eslintcache
 .cache
 *.tsbuildinfo
