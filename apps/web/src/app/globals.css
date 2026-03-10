@@ -32,8 +32,8 @@ body {
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  gap: 2rem;
-  padding: 4rem 2rem 2rem;
+  gap: 1rem;
+  padding: 1.5rem 2rem 2rem;
 }
 
 .auth-logo {
@@ -43,7 +43,7 @@ body {
 .pokeball-icon {
   width: 120px;
   height: 120px;
-  margin: 0 auto 1.25rem;
+  margin: 0 auto 0.6rem;
   opacity: 0.9;
 }
 
